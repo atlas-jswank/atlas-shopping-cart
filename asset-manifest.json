@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/atlas-shopping-cart/static/css/main.9405bdf8.css",
+    "main.js": "/atlas-shopping-cart/static/js/main.e5fdf40e.js",
+    "index.html": "/atlas-shopping-cart/index.html",
+    "main.9405bdf8.css.map": "/atlas-shopping-cart/static/css/main.9405bdf8.css.map",
+    "main.e5fdf40e.js.map": "/atlas-shopping-cart/static/js/main.e5fdf40e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9405bdf8.css",
+    "static/js/main.e5fdf40e.js"
+  ]
+}
