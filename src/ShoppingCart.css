@@ -1,0 +1,95 @@
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.shopping-cart {
+  background: var(--white);
+  color: var(--blue);
+  border-radius: 30px;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.shopping-cart-total .icon {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.badge {
+  background-color: var(--beige);
+  color: rbga(0, 0, 0, 0.5);
+  padding: 0 1rem;
+  border-radius: 30px;
+  margin-right: 10px;
+  font-weight: 700;
+  margin: 10px;
+  width: fit-content;
+}
+
+.cart {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cart td {
+  min-width: 200px;
+}
+
+.shopping-cart .badge {
+  background-color: var(--blue-light);
+  color: var(--white);
+  padding: 0.25rem 1rem;
+  min-width: 100px;
+}
+
+.shopping-cart td:first-child {
+  text-align: right;
+}
+.shopping-cart td:not(:first-child) {
+  text-align: center;
+}
+
+.cart-item {
+  margin: 1rem;
+}
+.cart-item-name {
+  font-weight: 600;
+  font-size: 18px;
+}
+.cart-item button {
+  padding: 0.25rem 1rem;
+  margin: 0 0.5rem;
+}
+.cart-item button.trash {
+  background-color: var(--red);
+}
+.cart-item button svg {
+  stroke: var(--white);
+  width: 30px;
+}
+
+.add-item-select {
+  width: 200px;
+  margin: 0 auto;
+  padding: 0.5rem;
+  border: 1px solid var(--blue-light);
+  border-radius: 30px;
+}
+
+.total-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.shopping-cart-select {
+  margin: 0 auto;
+  width: 500px;
+}
