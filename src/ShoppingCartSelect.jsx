@@ -1,5 +1,4 @@
 import React from "react";
-import { useShoppingCart } from "./store";
 
 const options = [
   { value: { id: "apple", price: 1.99, name: "Apple" }, label: "Apple" },
@@ -20,7 +19,6 @@ const options = [
 ];
 
 export default function ShoppingCartSelect() {
-  const { add } = useShoppingCart();
   return (
     <>
       <div className="shopping-cart-select">
@@ -33,7 +31,7 @@ export default function ShoppingCartSelect() {
             const value = options.filter(
               (option) => option.label === e.target.value
             )[0].value;
-            add(value);
+            console.log(value);
           }}
         >
           {options.map((option) => (

@@ -1,11 +1,9 @@
-import "./ShoppingCart.css";
 import ShoppingCartTotal from "./ShoppingCartTotal";
 import ShoppingCartRow from "./ShoppingCartRow";
-import { useAllItems } from "./store";
 import ShoppingCartSelect from "./ShoppingCartSelect";
 
 export default function ShoppingCart() {
-  const items = useAllItems();
+  const items = ["apple", "banana", "orange"];
   return (
     <div className="shopping-cart">
       <ShoppingCartSelect />

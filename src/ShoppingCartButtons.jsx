@@ -1,9 +1,6 @@
-import { useShoppingCart } from "./store";
-
 export function AddItemButton({ item }) {
-  const { increment } = useShoppingCart();
   return (
-    <button onClick={() => increment(item)}>
+    <button>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -23,9 +20,8 @@ export function AddItemButton({ item }) {
 }
 
 export function DecrementItemButton({ item }) {
-  const { decrement } = useShoppingCart();
   return (
-    <button onClick={() => decrement(item)}>
+    <button>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -41,9 +37,8 @@ export function DecrementItemButton({ item }) {
 }
 
 export function DeleteItemButton({ item }) {
-  const { remove } = useShoppingCart();
   return (
-    <button className="trash" onClick={() => remove(item)}>
+    <button className="trash">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"

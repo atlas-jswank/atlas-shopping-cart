@@ -3,20 +3,14 @@ import {
   DecrementItemButton,
   DeleteItemButton,
 } from "./ShoppingCartButtons";
-import { useCartItem } from "./store";
 
 export default function CartItem({ item }) {
-  const { name, quantity, price, total } = useCartItem(item);
   return (
     <tr className="cart-item">
-      <td className="cart-item-name">
-        {name} (${price})
-      </td>
+      <td className="cart-item-name">Apple (10.99)</td>
       <td className="total-column">
-        <span className="badge cart-item-total">{quantity}</span>
-        <span className="badge cart-item-total">
-          {Math.round(total * 100) / 100}
-        </span>
+        <span className="badge cart-item-total">3</span>
+        <span className="badge cart-item-total">23.67</span>
       </td>
       <td>
         <DecrementItemButton item={item} />
