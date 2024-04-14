@@ -16,6 +16,18 @@ export const options = [
     value: { id: "hoodie", price: 12.99, name: "Hoodie" },
     label: "Hoodie",
   },
+  {
+    value: { id: "hat", price: 8.99, name: "Hat" },
+    label: "Hat",
+  },
+  {
+    value: { id: "mug", price: 7.0, name: "Coffee Mug" },
+    label: "Coffee Mug",
+  },
+  {
+    value: { id: "bag", price: 15.5, name: "Backpack" },
+    label: "Backpack",
+  },
 ];
 
 export const state = {
