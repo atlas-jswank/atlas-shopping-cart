@@ -1,22 +1,5 @@
 import React from "react";
-
-const options = [
-  { value: { id: "apple", price: 1.99, name: "Apple" }, label: "Apple" },
-  { value: { id: "banana", price: 1.99, name: "Banana" }, label: "Banana" },
-  { value: { id: "orange", price: 1.99, name: "Orange" }, label: "Orange" },
-  { value: { id: "grape", price: 1.99, name: "Grape" }, label: "Grape" },
-  { value: { id: "kiwi", price: 1.99, name: "Kiwi" }, label: "Kiwi" },
-  { value: { id: "pear", price: 1.99, name: "Pear" }, label: "Pear" },
-  {
-    value: { id: "pineapple", price: 1.99, name: "Pineapple" },
-    label: "Pineapple",
-  },
-  { value: { id: "mango", price: 1.99, name: "Mango" }, label: "Mango" },
-  {
-    value: { id: "watermelon", price: 1.99, name: "Watermelon" },
-    label: "Watermelon",
-  },
-];
+import { options } from "./store";
 
 export default function ShoppingCartSelect() {
   return (

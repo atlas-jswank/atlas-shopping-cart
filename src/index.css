@@ -134,7 +134,8 @@ button:hover {
     animation: heartbeat 1s infinite;
   }
   .logo {
-    animation: logo-spin infinite 20s linear;
+    width: 400px;
+    margin: 0 auto;
   }
 }
 
