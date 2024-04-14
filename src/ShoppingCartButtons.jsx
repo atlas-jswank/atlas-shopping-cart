@@ -1,4 +1,4 @@
-export function AddItemButton({ item }) {
+export function IncrementItemButton({ item }) {
   return (
     <button>
       <svg

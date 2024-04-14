@@ -1,7 +1,7 @@
 import {
-  AddItemButton,
   DecrementItemButton,
   DeleteItemButton,
+  IncrementItemButton,
 } from "./ShoppingCartButtons";
 
 export default function CartItem({ item }) {
@@ -14,7 +14,7 @@ export default function CartItem({ item }) {
       </td>
       <td>
         <DecrementItemButton item={item} />
-        <AddItemButton item={item} />
+        <IncrementItemButton item={item} />
         <DeleteItemButton item={item} />
       </td>
     </tr>
