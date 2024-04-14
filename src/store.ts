@@ -1,8 +1,28 @@
 /**
- * Initial State
+ * Type Definitions
  */
 
-export const options = [
+type Merchandise = {
+  id: string;
+  name: string;
+  price: number;
+};
+
+type CartItem = Merchandise & {
+  quantity: number;
+};
+
+type CartState = {
+  items: {
+    [key: string]: CartItem;
+  };
+};
+
+/**
+ * Initial state
+ */
+
+export const options: Array<{ value: Merchandise; label: string }> = [
   { value: { id: "tshirt", price: 9.99, name: "T-Shirt" }, label: "T-Shirt" },
   {
     value: { id: "stickers", price: 2.49, name: "Sticker Pack" },
@@ -30,14 +50,16 @@ export const options = [
   },
 ];
 
-export const state = {
+export const initialState: CartState = {
   items: {
     tshirt: {
+      id: "tshirt",
       name: "T-Shirt",
       price: 9.99,
       quantity: 5,
     },
     stickers: {
+      id: "stickers",
       name: "Sticker Pack",
       price: 2.49,
       quantity: 3,
